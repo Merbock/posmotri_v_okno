@@ -65,6 +65,7 @@ ol {
   display: flex;
   align-items: end;
   gap: 29px;
+  inline-size: 1140px;
 }
 
 .result__video-container {
@@ -115,6 +116,17 @@ ol {
 
 .search-form__label:hover .search-form__label-text{
   text-decoration: underline;
+}
+
+.search-form__label:active .search-form__label-text {
+  text-decoration: none;
+}
+
+.search-form__label:active .search-form__pseudo-checkbox::after {
+  content: "";
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
 }
 
 .search-form__label:active .search-form__textfield{
@@ -187,6 +199,7 @@ ol {
   height: 300px;
   overflow: auto;
   padding: 4px;
+  inline-size: 404px;
 }
 
 .content__list-item:not(:last-child) {
@@ -199,6 +212,10 @@ ol {
 
 .content__list-item:hover {
   text-decoration: underline;
+}
+
+.content__list-item:active {
+  text-decoration: none;
 }
 
 .content__card-link {
@@ -262,10 +279,11 @@ ol {
   outline-offset: 1px;
 }
 
-.button:active {
-  background-color: #545050;
-}
-
 .button:hover {
   text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
 }
